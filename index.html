@@ -13,7 +13,6 @@
 
     <!-- script cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <script src="./js/jquery-3.6.4.min.js"></script>
     <script src="./js/index.js"></script>
 </head>
 <body>
@@ -305,6 +304,7 @@
 
 <!-- Initialize Swiper -->
 <script>
+    
   var swiper = new Swiper(".swiper", {
     slidesPerView: 1,
     // spaceBetween: 30, - 이미지 사이의 여백
@@ -320,27 +320,7 @@
       prevEl: ".swiper-button-prev",
     },
   });
-    $(function(){
-let windowW = $(window).width();
-console.log(windowW);
 
-if(windowW >= 1339){
-    nav();
-    subMenu();
-}else if(windowW < 1338 && windowW >= 980){
-    // nav();
-    mNav();
-    subMenu();
-    gallery();
-
-}else if(windowW < 979 && windowW >= 580){
-    // 타블릿
-    mNav();
-    gallery();
-}else if(windowW < 579 ){
-    // 모바일
-}
-    })
 </script>
 </body>
 </html>

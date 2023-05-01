@@ -1,18 +1,35 @@
-// 내비게이션
-function nav(){
-  $('nav li>a').on('click', function(){
-    let href = $(this).attr('href');
-    let idHeight = $(href).offset().top;
-    $('html,body').animate({scrollTop: idHeight}, 500);
+import $ from "jquery";
+$(function(){
+  let windowW = $(window).width();
+  console.log(windowW);
 
-    console.log(href, idHeight);
-    // nav a 눌러 스크롤 내리기
-    /* 1. a 클릭 - a 막아주기*
-      2. 누른 것의 높이 알아보기*
-      3. 스크롤 사용하여 화면 이동시기(animate)*
-    */
-    return false;
-  });
+  if(windowW >= 1339){
+    nav();
+    subMenu();
+  }else if(windowW < 1338 && windowW >= 980){
+    // nav();
+    mNav();
+    gallery();
+  }else if(windowW < 979 && windowW >= 580){
+    // 타블릿
+    mNav();
+    gallery();
+  }else if(windowW < 579 ){
+    // 모바일
+  }
+})
+
+// 함수 
+
+// 내비게이션
+function nav(){     // top포함
+  $('#header a').on('click', function(){
+      let href = $(this).attr('href');
+      console.log(href);
+      let idHeight = $(href).offset().top;
+      $('html,body').animate({scrollTop: idHeight}, 500);
+      return false;   // a 막아주기
+  })
 }
 function subMenu(){
   $('#subMenu li>a').on('click', function(){
