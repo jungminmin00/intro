@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index_media.css">
+    <!-- <link rel="stylesheet" href="./css/index_media copy.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- script cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="./js/jquery-3.6.4.min.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <!-- header -->
+    <header id="header">
+        <div>
+            <h1>JungMin Portfolio</h1>
+            <nav>
+                <h2 class="hide">메인내비게이션</h2>
+                <ul>
+                    <li><a href="#wrap">HOME</a></li>
+                    <li><a href="#box02">Skill</a></li>
+                    <li><a href="#box03">Works</a></li>
+                    <li><a href="#box04">Contack</a></li>
+                    <li><a href="#box05">Work</a></li>
+                    
+                </ul>
+                <p class="close"><i class="fa-solid fa-xmark"></i></p>
+            </nav>
+            <p class="navBtn"><i class="fa-solid fa-bars"></i></p>
+        </div>
+    </header>
+    <!-- #box01 -->
+    <article id="box01">
+        <header><h3>We Design & Build<br>Creative Products</h3></header>
+        <div id="gallery01">
+            <div class="show01 swiper">
+                <div class="all01 swiper-wrapper">
+                    <!-- 1 -->
+                    <figure class="swiper-slide no01">
+                        <img src="./images/slide01.png" alt="배경1">
+                        <figcaption class="hide">배경1</figcaption>
+                    </figure>
+                    <!-- 2 -->
+                    <figure class="swiper-slide no02">
+                        <img src="./images/slide02.png" alt="배경2">
+                        <figcaption class="hide">배경2</figcaption>
+                    </figure>
+                    <!-- 3 -->
+                    <figure class="swiper-slide no03">
+                        <img src="./images/slide03.png" alt="배경3">
+                        <figcaption class="hide">배경3</figcaption>
+                    </figure>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </article>
+    <!-- #box02 -->
+    <article id="box02">
+        <div><!-- 작업영역 가이드 -->
+            <h3>About Me</h3>
+            <div>
+                <figure>
+                    <img src="./images/abourMe.png" alt="내 사진">
+                    <figcaption class="hide">이미지</figcaption>
+                </figure>
+                <ul>
+                    <li><h4>Need a Creative Product?<br>I can Help You!</h4></li>
+                    <li><p>Hi! I’m jung-min Hwang, and I’m a developer who has passion for building clean web applications with intuitive functionality. I enjoy the process of turning ideas into reality using creative solutions. I’m always curious about learning new skills, tools, and concepts. In addition to working on various solo full stack projects, I have worked with creative teams, which involves daily stand-ups and communications, source control, and project management.</p></li>
+                    <li><p><input type="submit" value="Hear Me"></p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal">
+            <section>
+                <h3>JungMin</h3>
+                <div>
+                    <figure>
+                        <img src="./images/icon/people.png" alt="작품1">
+                        <figcaption class="hide">
+                        내 정보
+                        </figcaption>
+                    </figure>
+                    <!-- 설명 -->
+                    <ul>
+                        <li>
+                            <dfn>Name</dfn> 
+                            <span>황정민</span>
+                        </li>
+                        <li>
+                            <dfn>Age</dfn> 
+                            <span>23</span>
+                        </li>
+                        <li>
+                            <dfn>Works</dfn> 
+                            <span>
+                                <a href="#" target="_blank">http://jjungm.dothome.co.kr/</a></span>
+                        </li>
+                        <li>
+                            <dfn>Phone</dfn> 
+                            <span>010-3886-5223</span>
+                        </li>
+                    </ul>
+                </div>
+                <p class="close"><i class="fa-solid fa-x"></i></p>
+            </section>
+        </div>
+    </article>
+    <!-- #box03 -->
+    <article id="box03">
+        <div><!-- 작업영역 가이드 -->
+            <h3>My Skill</h3>
+            <div>
+                <dl>
+                    <dt>What My Programming<br>Skills Included?</dt>
+                    <dd>I develop simple, intuitive and responsive user interface that helps users get things done with less effort and time with those technologies.</dd>
+                </dl>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li><!-- 12개 필요 -->
+                </ul>
+            </div>
+        </div>
+    </article>
+    
+    <!-- #box04 -->
+    <article id="box04">
+        <div><!-- 작업영역 가이드 -->
+            <h3>MY WORKS</h3>
+            <h4>See My Works Which Will Amaze You!</h4>
+            <p>I develop the best quality website that serves for the long-term.<br>Well-documented, clean, easy and elegant interface helps any non-technical clients.</p>
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">Javascript</a></li>
+                <li><a href="#">vue</a></li>
+                <li><a href="#">React</a></li>
+            </ul>
+            <div id="gallery04">
+                <div class="show04">
+                    <div class="all04">
+                        <figure> <!-- 1 -->
+                            <img src="./images/pic01.png" alt="작업물1">
+                            <figcaption>work01</figcaption>
+                        </figure>
+                        <figure> <!-- 2 -->
+                            <img src="./images/pic02.png" alt="작업물2">
+                            <figcaption>work01</figcaption>
+                        </figure>
+                        <figure> <!-- 3 -->
+                            <img src="./images/pic03.png" alt="작업물3">
+                            <figcaption>work01</figcaption>
+                        </figure>
+                        <figure> <!-- 4 -->
+                            <img src="./images/pic04.png" alt="작업물4">
+                            <figcaption>work01</figcaption>
+                        </figure>
+                        <figure> <!-- 5 -->
+                            <img src="./images/pic01.png" alt="작업물5">
+                            <figcaption>work01</figcaption>
+                        </figure>
+                        <figure> <!-- 6 -->
+                            <img src="./images/pic02.png" alt="작업물6">
+                            <figcaption>work01</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <!-- prev, next 버튼 자리 -->
+                <p class="prev"><i class="fa-solid fa-arrow-left"></i></p>
+                <p class="next"><i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+            <!-- modal -->
+            <div class="modal">
+                <section>
+                    <h3>work01</h3>
+                    <div>
+                        <figure>
+                            <img src="./images/pic02.png">
+                            <figcaption>작업물 이름</figcaption>
+                        </figure>
+                        <ul>
+                            <li>
+                                <dfn>제작년도</dfn>
+                                <span></span>
+                            </li>
+                            <li>
+                                <dfn>Tool</dfn>
+                                <span></span>
+                            </li>
+                            <li>
+                                <dfn>주소</dfn>
+                                <span></span>
+                            </li>
+                            <li>
+                                <dfn>설명</dfn>
+                                <span>주저리 주저리</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <p class="close"><i class="fa-solid fa-x"></i></p>
+            </div>
+        </div>
+    </article>
+    <!-- #box05 -->
+    <article id="box05">
+        <div><!-- 작업영역 가이드 -->
+            <h3>Contact</h3>
+            <div>
+                <ul>
+                    <li>
+                        <h4>Have You Any Project?<br>
+                        Please Drop a Message</h4>
+                    </li>
+                    <li>
+                        <p>Get in touch and let me know how I can help. fill out the form and I'll be in touch as soon as possible.</p>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>Address</dt>
+                            <dd>서울시 서대문구</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>Phone</dt>
+                            <dd>010 3886 5223</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>Email</dt>
+                            <dd>jjungjj0311@gmail.com</dd>
+                        </dl>
+                    </li>
+                </ul>
+                <form action="#" method="post">
+                    <ul>
+                        <li>
+                            <label for="userName">Name</label>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <label for="userEmail">Email</label>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <label for="userPhone">Phone</label>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <label for="userMessage">Message</label>
+                            <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+                        </li>
+                    </ul>
+                    <p><input type="submit" value="submit"></p>
+                </form>
+            </div>
+        </div>
+    </article>
+    <aside id="top">
+        <h4 class="hide">top버튼</h4>
+        <p><i class="fa-solid fa-angles-up"></i></p>
+    </aside>
+    <aside id="subMenu">
+        <h4 class="hide">subMenu버튼</h4>
+        <ul>
+            <li><a href="#wrap"><span>About</span></a></li>
+            <li><a href="#box02"><span>Info</span></a></li>
+            <li><a href="#box03"><span>Skill</span></a></li>
+            <li><a href="#box04"><span>Work</span></a></li>
+            <li><a href="#box05"><span>Contact</span></a></li>
+        </ul>
+    </aside>
+    <!-- footer -->
+    <footer>
+        <small>Copyright &copy; 2022 my portfolio by smg all right reserved</small>
+    </footer>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".swiper", {
+    slidesPerView: 1,
+    // spaceBetween: 30, - 이미지 사이의 여백
+    loop: true,
+    autoplay:true,
+    speed:2000,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+    $(function(){
+let windowW = $(window).width();
+console.log(windowW);
+
+if(windowW >= 1339){
+    nav();
+    subMenu();
+}else if(windowW < 1338 && windowW >= 980){
+    // nav();
+    mNav();
+    subMenu();
+    gallery();
+
+}else if(windowW < 979 && windowW >= 580){
+    // 타블릿
+    mNav();
+    gallery();
+}else if(windowW < 579 ){
+    // 모바일
+}
+    })
+</script>
+</body>
+</html>
