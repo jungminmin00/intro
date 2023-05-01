@@ -6,6 +6,7 @@ $(function(){
   if(windowW >= 1339){
     nav();
     subMenu();
+    hearMeBtn();
   }else if(windowW < 1338 && windowW >= 980){
     // nav();
     mNav();
@@ -17,6 +18,7 @@ $(function(){
   }else if(windowW < 579 ){
     // 모바일
   }
+  
 })
 
 // 함수 
@@ -31,7 +33,8 @@ function nav(){     // top포함
       return false;   // a 막아주기
   })
 }
-function subMenu(){
+// 서브메뉴
+function subMenu(){ 
   $('#subMenu li>a').on('click', function(){
     let href = $(this).attr('href');
     let idHeight = $(href).offset().top;
@@ -43,6 +46,7 @@ function subMenu(){
     $('html,body').animate({scrollTop: 0}, 500);
   });
 }
+
 // 모바일, 타블릿 
 function mNav(){
   let navWidth = $('#header nav').width();
@@ -82,5 +86,12 @@ function gallery(){
       $('#gallery04>.show04>.all04').css('margin-left', '-'+figureW+'px')
     });
   });
-
+}
+function hearMeBtn(){
+  $('#box02 input').on('click', function(){
+    $('#box02 .modal').css('display', 'flex');
+  })
+  $('.modal .close').on('click', function(){
+    $('#box02 .modal').css('display', 'none');
+  })
 }

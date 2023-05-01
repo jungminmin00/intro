@@ -23,7 +23,7 @@
     position: fixed;
     z-index: 5000;
     height: 100vh;
-    left: -39.9996vw ; top: 0 ;
+    left: -2000px ; top: 0 ;
     width: 39.9996vw;
     background-color:rgba(25, 4, 25,0.8);
     padding-top:10vh;
@@ -316,7 +316,7 @@
     position: fixed;
     z-index: 5000;
     height: 100vh;
-    left: -100% ; top: 0 ;
+    left: -2000px ; top: 0 ;
     width: 100%;
     background-color:rgba(25, 4, 25,0.8);
     padding-top:10vh;
@@ -609,7 +609,7 @@
     position: fixed;
     z-index: 5000;
     height: 100vh;
-    left: -100% ; top: 0 ;
+    left: 2000px; top: 0 ;
     width: 100%;
     background-color:rgba(25, 4, 25,0.8);
     padding-top:10vh;
@@ -642,8 +642,9 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    font-size:3.333vh;
+    font-size:30px;
     color:#fff;
+    padding: 15px;
   }
   #header .navBtn{ 
     display: flex;
@@ -651,8 +652,9 @@
     height: 3.3333vw;
     justify-content: center;
     color: #fff;
-    font-size: 25px;
+    font-size: 30px;
   }
+  
 
   /* box01 */
   #box01>header{ border: none; }
