@@ -96,7 +96,7 @@
       left: 111px; top: 116px; 
   }
   #box02>div>div>figure>img{ width: 39.9996vw/* 336px */;}
-  #box02 ul{ width: 93.3324vw/* 655px */;}
+  #box02>div>div>ul{ width: 93.3324vw/* 655px */;}
   #box02 h4{
     text-align: center;
     font-size: 3.3333vh/* 20px */;
@@ -123,7 +123,7 @@
     display: none; /* 인라인 블록은 텍스트 적인 성격이 생긴다. */
     /* position: fixed; */
     width:100%; height:100vh;
-    background-color:rgba(0,0,0,0.5);
+    background-color:rgba(0,0,0,0.8);
     left:0; top:0;
   }
   .modal>section{
@@ -132,7 +132,6 @@
     margin: 9.9999vh/* 250px */ auto 0;
     padding: 3.3333vh/* 100px */ 0 3.3333vh/* 100px */;
   }
-
   .modal>section>h3{  
     text-align: start;
     font-size: 4.99995vh/* 50px */;
@@ -147,7 +146,7 @@
   }
   .modal>section>div>figure>figcaption{ font-size: 2.33331vh;}
   .modal>section>div>ul{
-    width: 39.9996vw/* 500px */;
+    width: 50%/* 500px */;
     margin-right: 6.6666vw/* 250px */;
   }
   .modal>section>div>ul>li{
@@ -377,7 +376,7 @@
   #box02>div>div>figure>img{
       width: 48vw/* 336px */;
   }
-  #box02 ul{
+  #box02>div>div>ul{
       width: auto;
       margin: 0 0 0 40px;
       /* position: relative; */
@@ -421,22 +420,25 @@
       left:0; top:0;
   }
   .modal>section{
-      width: 1500px; 
-      margin: 100px auto 0;
+      width: 700px; 
+      margin: 0 auto;
       background-color: #fff;
-      padding: 100px 0 100px;
+      padding: 50px 0 50px;
   }
   .modal>section>div{
       display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: space-between;
   }
   .modal>section>h3{
       text-align: center;
-      font-size: 50px;
-      margin-bottom: 80px;
+      font-size: 38px;
+      margin-bottom: 40px;
   }
   .modal>section>div>figure{
-      margin-left: 25px;    
+    width: 300px; height: 300px;
+    margin-left: 25px;    
   }
   .modal>section>div>figure>img{
       margin-bottom: 30px;
@@ -444,11 +446,11 @@
   .modal>section>div>figure>figcaption{ font-size: 20px;}
   .modal>section>div>ul{
       width: 500px;
-      margin-right: 250px;
+      margin-right: 0;
   }
   .modal>section>div>ul>li{
       border-bottom: 1px solid #666;
-      line-height: 100px;
+      line-height: 60px;
   }
   .modal>section>div>ul>li>dfn{
       width: 100px;
@@ -609,7 +611,7 @@
     position: fixed;
     z-index: 5000;
     height: 100vh;
-    left: 2000px; top: 0 ;
+    left: -2000px; top: 0 ;
     width: 100%;
     background-color:rgba(25, 4, 25,0.8);
     padding-top:10vh;
@@ -660,110 +662,121 @@
   #box01>header{ border: none; }
 
   /* box02 */
-  #box02{/* background-color: #e8e8e8; */}
-  #box02 h3{}
-  #box02>div>div{
-      /* display: flex; */
-      /* justify-content: space-between;     */
-      flex-direction: column;
-      align-items: center;
+  #box02{
+    background-color: #e8e8e8;
+    padding-bottom: 90px;
   }
-  #box02>div>div>figure{ margin: 0 0  35px 0; }
-  #box02>div>div>figure>img{
-      width: 48vw/* 336px */;
-  }
-  #box02 ul{
-      width: auto;
-      margin: 0 0 0 40px;
-      /* position: relative; */
-  }
-  #box02 h4{
+#box02 h3{}
+#box02>div>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;    
+}
+#box02>div>div>figure{
+    margin: 0;
+    margin-bottom: 10px;
+    left: 0; top: 0; 
+}
+#box02>div>div>figure>img{
+    width: 300px;
+}
+#box02>div>div>ul{
+    width: 300px;
     text-align: center;
-      font-size: 25px;
-      font-weight: bolder;
-      /* color: #4b4b4b; */
-      line-height: 34px;
-      /* top: 0; */
-      margin-bottom: 20px;
-  }
-  #box02 p{ 
-      color: #4b4b4b;
-      font-size: 16px;
-      line-height: 30px;
-  }
-  #box02 li:last-child{
-      margin-bottom: 80px;
-  }
-  #box02 input{
-      position: absolute;
-      width: 32vw/* 197px */;
-      height: 56px;
-      font-size: 16px;
-      background-color: #9c9491;
-      color: #fff;
-      border: none;
-      border-radius: 26px/50%;
-      right: 0;
-  }
+    margin: 0;
+    position: relative;
+}
+#box02 h4{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #4b4b4b;
+    line-height: 36px;
+    top: 0;
+    margin-bottom: 0px;
+}
+#box02 p{ 
+    color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+}
+#box02 p:first-child{
+    margin-bottom: 22px;
+}
+#box02 input{
+    position: absolute;
+    width: 196px;
+    height: 56px;
+    font-size: 13px;
+    background-color: #9c9491;
+    color: #fff;
+    border: none;
+    border-radius: 26px/50%;
+    right: 0;
+    margin-right: 55px;
+}
 
   /* .modal */
   .modal{
-      display: none; /*  */
-      position: fixed;
-      z-index:5500;
-      width:100%; height:100vh;
-      background-color:rgba(0,0,0,0.8);
-      left:0; top:0;
-  }
-  .modal>section{
-      width: 1500px; 
-      margin: 100px auto 0;
-      background-color: #fff;
-      padding: 100px 0 100px;
-  }
-  .modal>section>div{
-      display: flex;
-      justify-content: space-between;
-  }
-  .modal>section>h3{
-      text-align: center;
-      font-size: 50px;
-      margin-bottom: 80px;
-  }
-  .modal>section>div>figure{
-      margin-left: 25px;    
-  }
-  .modal>section>div>figure>img{
-      margin-bottom: 30px;
-  }
-  .modal>section>div>figure>figcaption{ font-size: 20px;}
-  .modal>section>div>ul{
-      width: 500px;
-      margin-right: 250px;
-  }
-  .modal>section>div>ul>li{
-      border-bottom: 1px solid #666;
-      line-height: 100px;
-  }
-  .modal>section>div>ul>li>dfn{
-      width: 100px;
-      display: inline-block;
-      margin-left: 20px;
-      font-size: 20px;
-  }
-  .modal>section>div>ul>li>span{    font-size: 18px;}
-  .modal .close{
-      position:absolute;
-      width:35px; height:35px;
-      display:flex;
-      justify-content: center;
-      align-items: center;
-      border:1px solid #fff;
-      right:50px; top: 40px;
-      font-size:25px;
-      color:#fff;
-  }
-
+    display: none; /*  */
+    position: fixed;
+    z-index:5500;
+    width:100%; height:100vh;
+    background-color:rgba(0,0,0,0.8);
+    left:0; top:0;
+}
+.modal>section{
+    width: 700px; 
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px 0;
+}
+.modal>section>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.modal>section>h3{
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+.modal>section>div>figure{
+  width: 300px; height: 300px;
+  margin-left: 25px;    
+  margin-bottom: 10px;    
+}
+.modal>section>div>figure>img{
+    margin-bottom: 30px;
+}
+.modal>section>div>figure>figcaption{ font-size: 20px;}
+.modal>section>div>ul{
+    width: 500px;
+    margin-right: 0;
+}
+.modal>section>div>ul>li{
+    border-bottom: 1px solid #666;
+    line-height: 60px;
+}
+.modal>section>div>ul>li>dfn{
+    width: 100px;
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.modal>section>div>ul>li>span{    font-size: 18px;}
+.modal .close{
+    position:absolute;
+    width:30px; height:30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid #888;
+    right:20px; top: 20px;
+    font-size:25px;
+    color:#fff;
+}
   /* box03 */ 
   #box03>div>div{ flex-direction: column; }
   #box03 dl{
@@ -774,8 +787,8 @@
   #box03 dl>dt{ margin-bottom: 30px; }
   #box03 dl>dd{ font-size: 17px; }
   #box03 ul{
-      width: 58vw/* 570px */;
-      justify-content: flex-start;
+      width: 90%/* 570px */;
+      justify-content: space-between;
       margin: 0 auto;
   }
   #box03 ul>li{ margin: 0 7px 15px; }

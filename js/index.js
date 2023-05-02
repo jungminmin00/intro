@@ -8,15 +8,17 @@ $(function(){
     subMenu();
     hearMeBtn();
   }else if(windowW < 1338 && windowW >= 980){
-    // nav();
     mNav();
     gallery();
+    hearMeBtn();
   }else if(windowW < 979 && windowW >= 580){
     // 타블릿
     mNav();
     gallery();
+    hearMeBtn();
   }else if(windowW < 579 ){
     // 모바일
+    hearMeBtn();
   }
   
 })
@@ -69,24 +71,9 @@ function mNav(){
     $('#header .navBtn').show();
   });
 }
-function gallery(){
-  const figureW = $('#gallery04 figure').width();
-  $('.all04>figure:last').prependTo('.all04');
-  $('.all04').css('marginLeft', '-'+figureW+'px');
-  // 버튼클릭
-  $('#gallery04 .prev').on('click', function(){
-    $('#gallery04>.show04>.all04').animate({marginLeft: '-='+figureW+'px'}, 400, function(){
-      $('#gallery04 figure:first').appendTo('#gallery04>.show04>.all04');
-      $('#gallery04>.show04>.all04').css('margin-left', '-'+figureW+'px')
-    });
-  });
-  $('#gallery04 .next').on('click', function(){
-    $('#gallery04>.show04>.all04').animate({marginLeft: '-='+figureW+'px'}, 400, function(){
-      $('#gallery04 figure:last').prependTo('#gallery04>.show04>.all04');
-      $('#gallery04>.show04>.all04').css('margin-left', '-'+figureW+'px')
-    });
-  });
-}
+
+
+// box02
 function hearMeBtn(){
   $('#box02 input').on('click', function(){
     $('#box02 .modal').css('display', 'flex');
@@ -94,4 +81,27 @@ function hearMeBtn(){
   $('.modal .close').on('click', function(){
     $('#box02 .modal').css('display', 'none');
   })
+}
+
+// box04
+function gallery(){
+  let marginN = $('#gallery04 figure').css('margin-left');
+  let widthFig = $('#gallery04 figure').width(); 
+  let liWidth = (marginN * 2) + widthFig;
+  // 준비
+  $('.all04').css('margin-left','-='+liWidth+'px');  
+  $('.all04>figure:last').prependTo('.all04');
+  // 클릭시
+  $('.prev').on('click', function(){
+      $('.all04').animate({marginLeft:'-='+liWidth+'px'}, function(){
+          $('.all04>figure:first').appendTo('.all04');
+          $('.all04').css('margin-left', '-'+liWidth+'px');
+      });
+  });
+  $('.next').on('click', function(){
+      $('.all04').animate({marginLeft:'+='+liWidth+'px'}, function(){
+          $('.all04>figure:last').prependTo('.all04');
+          $('.all04').css('margin-left', '-'+liWidth+'px');
+      });
+  });
 }

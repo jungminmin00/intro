@@ -123,7 +123,7 @@ figure img{
 #box02>div>div>figure>img{
     width: 336px;
 }
-#box02 ul{
+#box02>div>div>ul{
     width: 655px;
     margin: 0 41px 0 0;
     position: relative;
@@ -137,7 +137,7 @@ figure img{
     margin-bottom: 40px;
 }
 #box02 p{ 
-    color: #4b4b4b;
+    color: #fff;
     font-size: 14px;
     line-height: 30px;
 }
