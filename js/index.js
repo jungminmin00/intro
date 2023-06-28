@@ -27,12 +27,17 @@ $(function(){
 
 // 내비게이션
 function nav(){     // top포함
-  $('#header a').on('click', function(){
+  $('#header nav>ul>li>a').on('click', function(){
       let href = $(this).attr('href');
       console.log(href);
       let idHeight = $(href).offset().top;
       $('html,body').animate({scrollTop: idHeight}, 500);
       return false;   // a 막아주기
+  })
+}
+function nav(){
+  $('#header>div>nav>ul>li>a').on('click', function(){
+    return false;
   })
 }
 // 서브메뉴
