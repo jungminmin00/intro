@@ -13,7 +13,11 @@
 
     <!-- script cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+
     <script src="./js/index.js"></script>
+    <script type="module" src="pData.js"></script>
 </head>
 <body>
 <div id="wrap">
@@ -154,34 +158,21 @@
             <ul>
                 <li><a href="#">HTML</a></li>
                 <li><a href="#">Javascript</a></li>
-                <li><a href="#">vue</a></li>
                 <li><a href="#">React</a></li>
             </ul>
             <div id="gallery04">
                 <div class="show04">
-                    <div class="all04">
-                        <figure> <!-- 1 -->
-                            <img src="./images/pic01.png" alt="작업물1">
+                    <div class="gallery04">
+                        <figure> 
+                            <img src="./images/banksalad.jpg" alt="작업물1">
                             <figcaption>work01</figcaption>
                         </figure>
-                        <figure> <!-- 2 -->
-                            <img src="./images/pic02.png" alt="작업물2">
+                        <figure> 
+                            <img src="./images/hanssem.jpg" alt="작업물2">
                             <figcaption>work01</figcaption>
                         </figure>
-                        <figure> <!-- 3 -->
-                            <img src="./images/pic03.png" alt="작업물3">
-                            <figcaption>work01</figcaption>
-                        </figure>
-                        <figure> <!-- 4 -->
-                            <img src="./images/pic04.png" alt="작업물4">
-                            <figcaption>work01</figcaption>
-                        </figure>
-                        <figure> <!-- 5 -->
-                            <img src="./images/pic01.png" alt="작업물5">
-                            <figcaption>work01</figcaption>
-                        </figure>
-                        <figure> <!-- 6 -->
-                            <img src="./images/pic02.png" alt="작업물6">
+                        <figure> 
+                            <img src="./images/knola.jpg" alt="작업물3">
                             <figcaption>work01</figcaption>
                         </figure>
                     </div>
@@ -191,32 +182,24 @@
                 <p class="next"><i class="fa-solid fa-arrow-right"></i></p>
             </div>
             <!-- modal -->
-            <div class="modal">
+            <div id="modal">
                 <section>
-                    <h3>work01</h3>
+                    <h4>work01</h4>
                     <div>
                         <figure>
                             <img src="./images/pic02.png">
                             <figcaption>작업물 이름</figcaption>
                         </figure>
-                        <ul>
-                            <li>
-                                <dfn>제작년도</dfn>
-                                <span></span>
-                            </li>
-                            <li>
-                                <dfn>Tool</dfn>
-                                <span></span>
-                            </li>
-                            <li>
-                                <dfn>주소</dfn>
-                                <span></span>
-                            </li>
-                            <li>
-                                <dfn>설명</dfn>
-                                <span>주저리 주저리</span>
-                            </li>
-                        </ul>
+                        <dl>
+                            <dt>year</dt>
+                            <dd class="year">2000</dd>
+                            <dt>language</dt>
+                            <dd class="language">없음</dd>
+                            <dt>url</dt>
+                            <dd class="url"><a href="">주소</a></dd>
+                            <dt>설명</dt>
+                            <dd class="explain">블라블라</dd>
+                        </dl>
                     </div>
                 </section>
                 <p class="close"><i class="fa-solid fa-x"></i></p>

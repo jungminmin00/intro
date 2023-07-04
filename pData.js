@@ -1,37 +1,22 @@
-[
+export default [
     {
         "id": 0,
-        "title":"theSkinFood",
-        "url":"",
-        "language":["javascript", "html5", "css", "jQuery"]
-    },
-    {
-        "id": 1,
         "title":"banksalad",
+        "photo": './images/pic01.png',
         "url":"",
         "language":["javascript", "html5", "sass", "jQuery"]
     },
     {
-        "id": 3,
+        "id": 1,
         "title":"hanssem",
+        "photo": './images/pic01.png',
         "url":"http://jungmin.react.hanssem.s3-website.ap-northeast-2.amazonaws.com",
         "language":["javascript", "html5", "sass", "jQuery", "react"]
     },
     {
-        "id": 4,
-        "title":"가위바위보",
-        "url":"",
-        "language":["javascript", "html5", "sass", "react"]
-    },
-    {
-        "id": 5,
-        "title":"환자 예약 시스템",
-        "url":"",
-        "language":["javascript", "html5", "sass", "react"]
-    },
-    {
-        "id": 6,
+        "id": 2,
         "title":"knola",
+        "photo": './images/pic01.png',
         "url":"http://jungmin.react.knola.s3-website.ap-northeast-2.amazonaws.com",
         "language":["javascript", "html5", "sass", "react"]
     }
