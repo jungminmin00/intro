@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
-    <!-- <link rel="stylesheet" href="./css/index.css"> -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
     <!-- <link rel="stylesheet" href="./css/index_media.css"> -->
-    <!-- <link rel="stylesheet" href="./css/index_media copy.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,10 +19,10 @@
 
     <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
 
-    <script src="./js/index.js"></script>
+    <script type="module" src="./js/index.js"></script>
     <script type="module" src="pData.js"></script>
 </head>
-<body>
+<body> 
 <div id="wrap">
     <!-- header -->
     <header id="header">
@@ -44,7 +43,13 @@
     </header>
     <!-- #box01 -->
     <article id="box01">
-        <P><span><i class="fa fa-angle-down"></i></span> SCROLL DOWN <span><i class="fa fa-angle-down"></i></span></P>
+        <div class="typing">
+            I'M A ( 
+            <span class="text"></span>
+            ) DEVELOPMENT;
+        </div>
+        <p>황정민 프론트엔드 개발자 포트폴리오</p>
+        <a href="#box02"><span><i class="fa fa-angle-down"></i></span> SCROLL DOWN <span><i class="fa fa-angle-down"></i></span></a>
     </article>
     <!-- #box02 -->
     <article id="box02">
@@ -68,168 +73,23 @@
                 <figure>
                     <img src="" alt=""/>
                     <figcaption>    <!-- 제목 -->
-
+                        <dl>
+                            <dt></dt>
+                            <dd>
+                                <a href="./project/knola.html" target="_blank">크놀라 자세히보기</a>
+                            </dd>
+                        </dl>
                     </figcaption>
                 </figure>
             </div>
         </div>
     </article>
     
-    <!-- #box04 -->
-    <article id="box04">
-        <div><!-- 작업영역 가이드 -->
-            <h3>MY WORKS</h3>
-            <h4>See My Works Which Will Amaze You!</h4>
-            <p>I develop the best quality website that serves for the long-term.<br>Well-documented, clean, easy and elegant interface helps any non-technical clients.</p>
-            <ul>
-                <li><a href="#">HTML</a></li>
-                <li><a href="#">Javascript</a></li>
-                <li><a href="#">React</a></li>
-            </ul>
-            <div id="gallery04">
-                <div class="show04">
-                    <div class="gallery04">
-                        <figure> 
-                            <img src="./images/banksalad.jpg" alt="작업물1">
-                            <figcaption>work01</figcaption>
-                        </figure>
-                        <figure> 
-                            <img src="./images/hanssem.jpg" alt="작업물2">
-                            <figcaption>work01</figcaption>
-                        </figure>
-                        <figure> 
-                            <img src="./images/knola.jpg" alt="작업물3">
-                            <figcaption>work01</figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <!-- prev, next 버튼 자리 -->
-                <p class="prev"><i class="fa-solid fa-arrow-left"></i></p>
-                <p class="next"><i class="fa-solid fa-arrow-right"></i></p>
-            </div>
-            <!-- modal -->
-            <div id="modal">
-                <section>
-                    <h4>work01</h4>
-                    <div>
-                        <figure>
-                            <img src="./images/pic02.png">
-                            <figcaption>작업물 이름</figcaption>
-                        </figure>
-                        <dl>
-                            <dt>year</dt>
-                            <dd class="year">2000</dd>
-                            <dt>language</dt>
-                            <dd class="language">없음</dd>
-                            <dt>url</dt>
-                            <dd class="url"><a href="">주소</a></dd>
-                            <dt>설명</dt>
-                            <dd class="explain">블라블라</dd>
-                        </dl>
-                    </div>
-                </section>
-                <p class="close"><i class="fa-solid fa-x"></i></p>
-            </div>
-        </div>
-    </article>
-    <!-- #box05 -->
-    <article id="box05">
-        <div><!-- 작업영역 가이드 -->
-            <h3>Contact</h3>
-            <div>
-                <ul>
-                    <li>
-                        <h4>Have You Any Project?<br>
-                        Please Drop a Message</h4>
-                    </li>
-                    <li>
-                        <p>Get in touch and let me know how I can help. fill out the form and I'll be in touch as soon as possible.</p>
-                    </li>
-                    <li>
-                        <dl>
-                            <dt>Address</dt>
-                            <dd>서울시 서대문구</dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl>
-                            <dt>Phone</dt>
-                            <dd>010 3886 5223</dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl>
-                            <dt>Email</dt>
-                            <dd>jjungjj0311@gmail.com</dd>
-                        </dl>
-                    </li>
-                </ul>
-                <form action="#" method="post">
-                    <ul>
-                        <li>
-                            <label for="userName">Name</label>
-                            <input type="text">
-                        </li>
-                        <li>
-                            <label for="userEmail">Email</label>
-                            <input type="text">
-                        </li>
-                        <li>
-                            <label for="userPhone">Phone</label>
-                            <input type="text">
-                        </li>
-                        <li>
-                            <label for="userMessage">Message</label>
-                            <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
-                        </li>
-                    </ul>
-                    <p><input type="submit" value="submit"></p>
-                </form>
-            </div>
-        </div>
-    </article>
-    <aside id="top">
-        <h4 class="hide">top버튼</h4>
-        <p><i class="fa-solid fa-angles-up"></i></p>
-    </aside>
-    <aside id="subMenu">
-        <h4 class="hide">subMenu버튼</h4>
-        <ul>
-            <li><a href="#wrap"><span>About</span></a></li>
-            <li><a href="#box02"><span>Info</span></a></li>
-            <li><a href="#box03"><span>Skill</span></a></li>
-            <li><a href="#box04"><span>Work</span></a></li>
-            <li><a href="#box05"><span>Contact</span></a></li>
-        </ul>
-    </aside>
+    
     <!-- footer -->
     <footer>
         <small>Copyright &copy; 2022 my portfolio by smg all right reserved</small>
     </footer>
 </div>
-
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-<!-- Initialize Swiper -->
-<script>
-    
-  var swiper = new Swiper(".swiper", {
-    slidesPerView: 1,
-    // spaceBetween: 30, - 이미지 사이의 여백
-    loop: true,
-    autoplay:true,
-    speed:2000,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-
-</script>
 </body>
 </html>
