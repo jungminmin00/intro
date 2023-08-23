@@ -3,8 +3,34 @@
 $(function(){
   let windowW = $(window).width();
   console.log(windowW);
-  // allData();
   // scrollAll();
+
+  let mouseCursor = document.querySelector(".cursor");
+  let navLinks = document.querySelectorAll("#box03>div>div>figure"); //메뉴 링크
+  //window 객체에 scroll & mouse 이벤트를 추가하고 cursor함수 실행되도록 함
+  window.addEventListener("scroll", cursor);
+  window.addEventListener("mousemove", cursor);
+  //커스텀 커서의 left값과 top값을 커서의 XY좌표값과 일치시킴
+  function cursor(e) {
+      mouseCursor.style.left = e.pageX + "px";
+      mouseCursor.style.top = e.pageY - scrollY + "px";
+  }
+  // 
+  navLinks.forEach((link) => {
+    link.addEventListener("mouseover", () => {
+      mouseCursor.classList.add("cursor-grow");
+      mouseCursor.style.zIndex = "-1";
+      link.classList.add("hovered-link");
+    });
+    link.addEventListener("mouseleave", () => {
+      mouseCursor.classList.remove("cursor-grow");
+      mouseCursor.style.zIndex = "1000";
+      link.classList.remove("hovered-link");
+    });
+  });
+  // 
+
+  // allData();
   if(windowW >= 1339){
     // nav();
     // subMenu();
@@ -27,6 +53,7 @@ $(function(){
   
 })
 
+
 // 함수 
 function allData(){
   
@@ -42,7 +69,7 @@ function allData(){
 
   Modal.prototype.action = function(){
   document.querySelector('#modal h4').innerHTML = this.title;
-  document.querySelector('#modal figure>img').setAttribute('src',this.pic);
+  document.querySelector('#box03>div>div>figure>img').setAttribute('src',this.pic);
   document.querySelector('#modal figure>figcaption').innerHTML =  this.title;
   document.querySelector('#modal dl>dd:nth-child(2)').innerHTML = this.year;
   document.querySelector('#modal dl>dd:nth-child(4)').innerHTML = this.program;
@@ -51,9 +78,9 @@ function allData(){
   document.querySelector('#modal dl>dd:nth-child(8)').innerHTML = this.text;
   }
   let mymodal = [
+    new Modal('knola','./images/knola.jpg','2003','react program','http://jungmin.react.knola.s3-website.ap-northeast-2.amazonaws.com','text03'),
     new Modal('banksalad','./images/banksalad.jpg','2001','react program','http://www.a1.com','text01'),
-    new Modal('hanssem','./images/hanssem.jpg','2002','js program','http://jungmin.react.hanssem.s3-website.ap-northeast-2.amazonaws.com','text02'),
-    new Modal('knola','./images/knola.jpg','2003','react program','http://jungmin.react.knola.s3-website.ap-northeast-2.amazonaws.com','text03')
+    new Modal('hanssem','./images/hanssem.jpg','2002','js program','http://jungmin.react.hanssem.s3-website.ap-northeast-2.amazonaws.com','text02')
   ]
   const btn = document.querySelectorAll('#gallery04 .gallery04>figure');
   const close = document.querySelector('#modal .close');

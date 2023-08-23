@@ -14,6 +14,9 @@ article{
 #wrap{
     background-color: #fff;
 }
+article>div{
+    padding: 120px 240px;
+}
 h3{
     color: #000;
     font-family: Montserrat;
@@ -29,6 +32,46 @@ h3>span{
     border-radius: 50%;
     background-color: #000;
     margin-right: 8px;
+}
+
+html {
+    --color-texta: #1d1d1d;
+    --color-textb: #fff;
+}
+.cursor {
+    width: 240px;
+    height: 240px;
+    border: 2px solid var(--color-texta);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    backdrop-filter: sepia(20%);
+    background-size: cover;
+    background-color: #F6A4F8;
+}
+.cursor-grow {
+    transform: scale(2);
+    background-color: var(--color-texta);
+}
+/* 점선이 들어갈 ::after(pseudo)요소 만들고 크기값 설정해주기*/
+#box03>div>div>figure:hover::after {
+    width: calc(100% - 2rem);
+    height: 3px;
+    background-size: contain; /* 배경 이미지(svg)가 알맞게 들어가도록*/
+  }
+/* hover된 링크의 글자 색상 정의(하얀색)*/
+/* .hovered-link 선택자명은 추후 JS로 추가할 예정!*/
+.hovered-link {
+    color: var(--color-textb) !important;
+}
+/* .gnb li a:hover::after의 svg에 배경이미지 지정!*/
+.hovered-link::after {
+    background-image: url("../images/icon/white.png");
 }
 
 /* header */
@@ -79,8 +122,10 @@ header>div>nav>ul a{
     line-height: 150%;
     font-family: Montserrat;
     /* padding-bottom: 80px; */
+    /* margin-bottom: 120px; */
 }
 #box01>.typing{
+    padding: 0;
     font-size: 48px;
     margin-bottom: 48px;
     line-height: 150%;
@@ -105,7 +150,7 @@ header>div>nav>ul a{
     width: auto;
 }
 #box02>div{
-    padding: 240px;
+    /* padding: 120px 240px; */
 }
 #box02>div>h3{
     margin-bottom: 160px;
@@ -130,7 +175,38 @@ header>div>nav>ul a{
     text-transform: uppercase;
 }
 
-/* box03 */
+/* box03 - PROJUET */
 #box03{
+    padding: 240px auto;
     
+} 
+#box03>div{}
+#box03>div>div{}
+#box03>div>div>figure{
+    margin-bottom: 40px;
+
+}
+#box03>div>div>figure:nth-child(1){
+    background-color: #D8EEFC;
+}
+#box03>div>div>figure:nth-child(2){
+    background-color: #F5F5F5;
+}
+#box03>div>div>figure:nth-child(3){
+    background-color: #E5EAEA;
+}
+#box03>div>div>figure:nth-child(4){
+    background-color: #FFB500;
+}
+#box03>div>div>figure:last-child{
+    margin-bottom: 0;
+}
+#box03>div>div>figure>img{}
+#box03>div>div>figure>figcaption{
+    color: #000;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
 }
