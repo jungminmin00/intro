@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* reset */
-body{}
 a{
     color: #fff;
 }
@@ -34,14 +33,23 @@ h3>span{
     margin-right: 8px;
 }
 
+/*  */
 html {
     --color-texta: #1d1d1d;
     --color-textb: #fff;
 }
+/* 시스템 커서 안 보이게 숨기기 */
+body {
+    /* cursor: none; */
+}
+/* 커스텀 커서 스타일 정의해주기 */
 .cursor {
-    width: 240px;
-    height: 240px;
-    border: 2px solid var(--color-texta);
+    display: inline-block;
+    padding: 0;
+    width: 120px;
+    height: 120px;
+    opacity: 0;
+    /* border: 2px solid var(--color-texta); */
     border-radius: 50%;
     position: absolute;
     z-index: 1000;
@@ -54,25 +62,40 @@ html {
     background-size: cover;
     background-color: #F6A4F8;
 }
+.cursor>span{
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 30px */
+}
 .cursor-grow {
     transform: scale(2);
+    opacity: 1;
     background-color: var(--color-texta);
+    background-color: #F6A4F8;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* 점선이 들어갈 ::after(pseudo)요소 만들고 크기값 설정해주기*/
 #box03>div>div>figure:hover::after {
-    width: calc(100% - 2rem);
-    height: 3px;
-    background-size: contain; /* 배경 이미지(svg)가 알맞게 들어가도록*/
+    /* width: calc(100% - 2rem); */
+    /* height: 3px; */
+    /* background-size: contain; 배경 이미지(svg)가 알맞게 들어가도록 */
   }
 /* hover된 링크의 글자 색상 정의(하얀색)*/
 /* .hovered-link 선택자명은 추후 JS로 추가할 예정!*/
-.hovered-link {
-    color: var(--color-textb) !important;
-}
+  .hovered-link {
+      color: var(--color-textb) !important;
+  }
 /* .gnb li a:hover::after의 svg에 배경이미지 지정!*/
-.hovered-link::after {
-    background-image: url("../images/icon/white.png");
-}
+  .hovered-link::after {
+      background-image: url("../images/icon/white.png");
+  }
 
 /* header */
 header{
@@ -184,7 +207,7 @@ header>div>nav>ul a{
 #box03>div>div{}
 #box03>div>div>figure{
     margin-bottom: 40px;
-
+    /* cursor:none; */
 }
 #box03>div>div>figure:nth-child(1){
     background-color: #D8EEFC;
