@@ -1,7 +1,6 @@
 {
   "name": "intro",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "parcel index.html",
@@ -11,11 +10,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "jquery": "^3.7.0",
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-static-files-copy": "^2.6.0",
-    "jquery": "^3.7.0"
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
   },
-  "staticFiles":{
-    "staticPath":"static"
-  }
+  "staticFiles": {
+    "staticPath": "static"
+  },
+  "description": ""
 }

@@ -208,23 +208,40 @@ header>div>nav>ul a{
 #box03>div>div>figure{
     margin-bottom: 40px;
     /* cursor:none; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 #box03>div>div>figure:nth-child(1){
     background-color: #D8EEFC;
 }
+#box03>div>div>figure:nth-child(1)>img{
+    
+}
 #box03>div>div>figure:nth-child(2){
     background-color: #F5F5F5;
+}
+#box03>div>div>figure:nth-child(2)>img{
+    
 }
 #box03>div>div>figure:nth-child(3){
     background-color: #E5EAEA;
 }
+#box03>div>div>figure:nth-child(3)>img{
+    
+}
 #box03>div>div>figure:nth-child(4){
     background-color: #FFB500;
+}
+#box03>div>div>figure:nth-child(4)>img{
+    
 }
 #box03>div>div>figure:last-child{
     margin-bottom: 0;
 }
-#box03>div>div>figure>img{}
+#box03>div>div>figure>img{
+    margin-bottom: 48px;
+}
 #box03>div>div>figure>figcaption{
     color: #000;
     font-family: Pretendard;
