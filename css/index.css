@@ -60,7 +60,7 @@ body {
     transform-origin: 100% 100%;
     backdrop-filter: sepia(20%);
     background-size: cover;
-    background-color: #F6A4F8;
+    background-color: #FF7394;
 }
 .cursor>span{
     color: #000;
@@ -75,7 +75,7 @@ body {
     transform: scale(2);
     opacity: 1;
     background-color: var(--color-texta);
-    background-color: #F6A4F8;
+    background-color: #FF7394;
     border: none;
     display: flex;
     justify-content: center;
@@ -128,7 +128,16 @@ header>div>nav>ul{
     gap: 36px;
 }
 header>div>nav>ul a{
+    color: #FFF;
+    text-align: right;
     font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 24px */
+}
+header>div>nav>ul a:hover{
+    text-decoration: underline;
 }
 
 /* box01 */
@@ -154,7 +163,7 @@ header>div>nav>ul a{
     line-height: 150%;
 }
 #box01>.typing>.text{
-    color: #F6A4F8;
+    color: #FF7394;
 }
 #box01>p{
     font-size: 20px;
@@ -204,42 +213,35 @@ header>div>nav>ul a{
     
 } 
 #box03>div{}
-#box03>div>div{}
+#box03>div>h3{
+    margin-bottom: 160px;
+}
 #box03>div>div>figure{
     margin-bottom: 40px;
     /* cursor:none; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 291px 0;
 }
 #box03>div>div>figure:nth-child(1){
-    background-color: #D8EEFC;
-}
-#box03>div>div>figure:nth-child(1)>img{
-    
+    background-color: #DEEEF9;
 }
 #box03>div>div>figure:nth-child(2){
     background-color: #F5F5F5;
 }
-#box03>div>div>figure:nth-child(2)>img{
-    
-}
 #box03>div>div>figure:nth-child(3){
-    background-color: #E5EAEA;
-}
-#box03>div>div>figure:nth-child(3)>img{
-    
+    background-color: #E6F4F4;
 }
 #box03>div>div>figure:nth-child(4){
-    background-color: #FFB500;
-}
-#box03>div>div>figure:nth-child(4)>img{
-    
+    background-color: #FCEFCD;
 }
 #box03>div>div>figure:last-child{
     margin-bottom: 0;
 }
 #box03>div>div>figure>img{
+    width: fit-content;
     margin-bottom: 48px;
 }
 #box03>div>div>figure>figcaption{
@@ -249,4 +251,112 @@ header>div>nav>ul a{
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 30px */
+}
+
+#box04{
+    background-color: #FF7394;
+}
+#box04 div>h3{
+    margin-bottom: 80px;
+}
+#box04>div>div{
+    box-sizing: border-box;
+    width: 1440px;
+    height: 320px;
+    background-color: #fff;
+    padding: 0 120px;
+    display: flex;
+    align-items: center;
+}
+#box04>div>div:last-child{
+    margin-top: 24px;
+}
+#box04>div>div>h4{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 30px */
+    margin-right: 121px;
+}
+#box04>div>div>ul{
+    display: flex;
+    align-items: center;
+}
+#box04>div>div>ul>li{
+    margin-right: 64px;
+}
+#box04>div>div>ul>li:last-child{
+    margin-right: 0;
+}
+#box04>div>div>ul>li>img{
+    width: 112px;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    padding: 120px 80px;
+}
+footer>div{
+    margin: 0 auto;
+    display: flex;
+}
+footer>div>h4{
+    
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 33px */
+    margin-right: 400px;
+}
+footer>div>div>h3{
+    color: #fff;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 30px */
+    margin-bottom: 40px;
+}
+footer>div>div>ul{
+    margin-bottom: 40px;
+}
+footer>div>div>ul>li{
+    
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 24px */
+}
+footer>div>div>small{
+    opacity: 0.5;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 19.5px */
+}
+footer>div>div:last-child{
+    position: absolute;
+    right: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+footer>div>div>a{
+    margin-bottom: 122px;
+}
+footer>div>div>a>img{}
+footer>div>div>p{color: #FFF;
+    text-align: right;
+    font-family: Pretendard;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 19.5px */
+    opacity: 0.5;
 }

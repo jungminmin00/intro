@@ -8,6 +8,7 @@ $(function(){
   nav();
   textAnimation();
   cursorAnimate();
+  link();
   // allData();
   if(windowW >= 1339){
     // subMenu();
@@ -291,4 +292,19 @@ function cursorAnimate(){
       link.classList.remove("hovered-link");
     });
   });
+}
+
+function link(){
+  $('#box03>div .knola').on('click', function(){
+    window.open('./project/knola.html');
+  })
+  $('#box03>div .hanssem').on('click', function(){
+    window.open('./project/hanssem.html');
+  })
+  $('#box03>div .banksalad').on('click', function(){
+    window.open('./project/banksalad.html');
+  })
+  $('#box03>div .theskinfood').on('click', function(){
+    window.open('./project/theskinfood.html');
+  })
 }
