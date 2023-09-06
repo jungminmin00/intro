@@ -7,25 +7,17 @@ $(function(){
 
   nav();
   textAnimation();
-  cursorAnimate();
   link();
   // allData();
-  if(windowW >= 1339){
+  if(windowW >= 1441){
+    cursorAnimate();
     // subMenu();
     // hearMeBtn();
     // gallery();
-    animation();
-  }else if(windowW < 1338 && windowW >= 980){
+    // animation();
+  }else if(windowW <= 1440){
     // mNav();
     // gallery();
-    // hearMeBtn();
-  }else if(windowW < 979 && windowW >= 580){
-    // 타블릿
-    // mNav();
-    // gallery();
-    // hearMeBtn();
-  }else if(windowW < 579 ){
-    // 모바일
     // hearMeBtn();
   }
   
@@ -122,6 +114,13 @@ function scrollAll(){
 function nav(){     // top포함
   $('#header nav>ul>li>a').on('click', function(){
       let href = $(this).attr('href');
+      console.log(href);
+      let idHeight = $(href).offset().top;
+      $('html,body').animate({scrollTop: idHeight}, 500);
+      return false;   // a 막아주기
+  })
+  $('#box01>a').on('click', function(){
+    let href = $(this).attr('href');
       console.log(href);
       let idHeight = $(href).offset().top;
       $('html,body').animate({scrollTop: idHeight}, 500);

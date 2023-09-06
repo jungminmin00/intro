@@ -7,8 +7,10 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index_media.css">
     <!-- <link rel="stylesheet" href="./css/index_media.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,11 +18,13 @@
 
     <!-- script cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script> 
+    <!-- <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script> -->
 
-    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
 
     <script type="module" src="./js/index.js"></script>
     <script type="module" src="pData.js"></script>
+    
 
     <!-- favicon -->
     <link rel="icon" href="./Favicon.png">
@@ -35,6 +39,11 @@
         </div>
         <div>
             <h1>JUNGMIN</h1>
+            <div id="navBtn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
             <nav>
                 <h2 class="hide">메인내비게이션</h2>
                 <ul>
@@ -51,9 +60,14 @@
     <!-- #box01 -->
     <article id="box01">
         <div class="typing">
-            I'M A (&nbsp;&nbsp;
-            <span class="text"></span>&nbsp;&nbsp;
-            ) DEVELOPMENT ;
+            <div>I'M </div>
+            <div>
+                &nbsp;(&nbsp;&nbsp;
+                <span class="text"></span>&nbsp;&nbsp;
+                )&nbsp;
+            </div>
+            <div>DEVELOPMENT ;</div>
+              
         </div>
         <p>황정민 프론트엔드 개발자 포트폴리오</p>
         <a href="#box02"><span><i class="fa fa-angle-down"></i></span> SCROLL DOWN <span><i class="fa fa-angle-down"></i></span></a>
@@ -136,7 +150,7 @@
     </article>
     
     <!-- footer -->
-    <footer>
+    <footer id="box05">
         <div>
             <h4>JUNGMIN</h4>
             <div>
