@@ -5,6 +5,7 @@ $(function(){
   console.log(windowW);
   // scrollAll();
 
+  
   nav();
   textAnimation();
   link();
@@ -19,6 +20,7 @@ $(function(){
     // mNav();
     // gallery();
     // hearMeBtn();
+    menuBtn();
   }
   
 })
@@ -291,6 +293,23 @@ function cursorAnimate(){
       link.classList.remove("hovered-link");
     });
   });
+  let knola = document.querySelector('.knola');
+  let hanssem = document.querySelector('.hanssem');
+  let banksalad = document.querySelector('.banksalad');
+  let theskinfood = document.querySelector('.theskinfood');
+  let textC = document.querySelector('.cursor>p>span');
+  knola.onmouseover = function(){
+    textC.innerText = 'Knola'
+  }
+  hanssem.onmouseover = function(){
+    textC.innerText = 'Hanssem'
+  }
+  banksalad.onmouseover = function(){
+    textC.innerText = 'Banksalad'
+  }
+  theskinfood.onmouseover = function(){
+    textC.innerText = 'Skinfood'
+  }
 }
 
 function link(){
@@ -306,4 +325,22 @@ function link(){
   $('#box03>div .theskinfood').on('click', function(){
     window.open('./project/theskinfood.html');
   })
+}
+
+function menuBtn(){
+  let nBtn = document.querySelector('header #navBtn');
+  let nCBtn = document.querySelector('header #navCloseBtn');
+  let nav = document.querySelector('header>div>nav');
+  nBtn.onclick = function(){
+    // console.log('click');
+    nav.style.display = 'flex';
+    nBtn.style.display = 'none';
+    nCBtn.style.display = 'flex';
+  }
+  nCBtn.onclick = function(){
+    // console.log('click');
+    nav.style.display = 'none';
+    nBtn.style.display = 'flex';
+    nCBtn.style.display = 'none';
+  }
 }
