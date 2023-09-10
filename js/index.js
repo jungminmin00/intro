@@ -9,6 +9,7 @@ $(function(){
   nav();
   textAnimation();
   link();
+  resize();
   // allData();
   if(windowW >= 1441){
     cursorAnimate();
@@ -331,6 +332,7 @@ function menuBtn(){
   let nBtn = document.querySelector('header #navBtn');
   let nCBtn = document.querySelector('header #navCloseBtn');
   let nav = document.querySelector('header>div>nav');
+  let list = document.querySelector('header>div>nav>ul>*');
   nBtn.onclick = function(){
     // console.log('click');
     nav.style.display = 'flex';
@@ -342,5 +344,18 @@ function menuBtn(){
     nav.style.display = 'none';
     nBtn.style.display = 'flex';
     nCBtn.style.display = 'none';
+  }
+  list.onclick = function(){
+    // console.log('click');
+    nav.style.display = 'none';
+    nBtn.style.display = 'flex';
+    nCBtn.style.display = 'none';
+  }
+}
+
+function resize(){
+  window.onresize = function(){
+    let innerWidth = window.innerHTML;
+    console.log(innerWidth);
   }
 }

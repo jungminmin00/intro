@@ -268,6 +268,7 @@ header #navCloseBtn>div:nth-child(2){
     font-weight: 500;
     line-height: 150%; /* 120px */
     margin-bottom: 48px;
+    opacity: 0.8;
 }
 #box02>div>div>p:last-child{
     color: #000;
@@ -321,6 +322,7 @@ header #navCloseBtn>div:nth-child(2){
     font-style: normal;
     font-weight: 500;
     line-height: 150%; /* 30px */
+    opacity: 0.8;
 }
 
 #box04{

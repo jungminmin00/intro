@@ -143,6 +143,18 @@
       font-size: 16px;
       margin-bottom: 0;
   }
+  #box01>.typing>div:last-child>span{
+    position: absolute;
+    bottom: 4px;
+    right: -12px;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 72px */
+    text-transform: uppercase;
+    /* vertical-align: top; */
+}
 
   /* box02 */
   #box02{
