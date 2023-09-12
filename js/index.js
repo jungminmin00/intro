@@ -5,6 +5,16 @@ $(function(){
   console.log(windowW);
   // scrollAll();
 
+  var delay = 300;
+  var timer = null;
+
+  //Javascript
+  window.addEventListener('resize', function(){
+    clearTimeout(timer);
+    timer = setTimeout(function(){
+      console.log('resize event!');
+    }, delay);
+  });
   
   nav();
   textAnimation();
@@ -22,6 +32,7 @@ $(function(){
     // gallery();
     // hearMeBtn();
     menuBtn();
+    headerBg();
   }
   
 })
@@ -332,7 +343,10 @@ function menuBtn(){
   let nBtn = document.querySelector('header #navBtn');
   let nCBtn = document.querySelector('header #navCloseBtn');
   let nav = document.querySelector('header>div>nav');
-  let list = document.querySelector('header>div>nav>ul>*');
+  let list1 = document.querySelector('header>div>nav>ul>li:nth-child(1)>a');
+  let list2 = document.querySelector('header>div>nav>ul>li:nth-child(2)>a');
+  let list3 = document.querySelector('header>div>nav>ul>li:nth-child(3)>a');
+  let list4 = document.querySelector('header>div>nav>ul>li:nth-child(4)>a');
   nBtn.onclick = function(){
     // console.log('click');
     nav.style.display = 'flex';
@@ -345,7 +359,25 @@ function menuBtn(){
     nBtn.style.display = 'flex';
     nCBtn.style.display = 'none';
   }
-  list.onclick = function(){
+  list1.onclick = function(){
+    // console.log('click');
+    nav.style.display = 'none';
+    nBtn.style.display = 'flex';
+    nCBtn.style.display = 'none';
+  }
+  list2.onclick = function(){
+    // console.log('click');
+    nav.style.display = 'none';
+    nBtn.style.display = 'flex';
+    nCBtn.style.display = 'none';
+  }
+  list3.onclick = function(){
+    // console.log('click');
+    nav.style.display = 'none';
+    nBtn.style.display = 'flex';
+    nCBtn.style.display = 'none';
+  }
+  list4.onclick = function(){
     // console.log('click');
     nav.style.display = 'none';
     nBtn.style.display = 'flex';
@@ -358,4 +390,54 @@ function resize(){
     let innerWidth = window.innerHTML;
     console.log(innerWidth);
   }
+}
+
+function headerBg(){
+  let header = document.querySelector('header');
+  let headerHn = document.querySelector('header>div>h1');
+  let headerBtn3 = document.querySelector('header #navBtn>div:nth-child(3)');
+  let headerBtn2 = document.querySelector('header #navBtn>div:nth-child(2)');
+  let headerBtn1 = document.querySelector('header #navBtn>div:nth-child(1)');
+  let headerCloseBtn1 = document.querySelector('header #navCloseBtn>div:nth-child(1)');
+  let headerCloseBtn2 = document.querySelector('header #navCloseBtn>div:nth-child(2)');
+  let bg = document.querySelector('header>div>nav');
+  let a4 = document.querySelector('header>div>nav>ul>li:nth-child(4)>a');
+  let a3 = document.querySelector('header>div>nav>ul>li:nth-child(3)>a');
+  let a2 = document.querySelector('header>div>nav>ul>li:nth-child(2)>a');
+  let a1 = document.querySelector('header>div>nav>ul>li:nth-child(1)>a');
+  let underline = document.querySelector('.underline:after');
+  
+
+  $(window).scroll(function(){
+    var navbar = $(this).scrollTop();
+    console.log(navbar);
+    if(navbar < 921){
+      header.style.backgroundColor = '#000';
+      headerHn.style.color = '#fff';
+      headerBtn3.style.backgroundColor = '#fff';
+      headerBtn2.style.backgroundColor = '#fff';
+      headerBtn1.style.backgroundColor = '#fff';
+      bg.style.backgroundColor = '#000';
+      headerCloseBtn1.style.backgroundColor = '#fff';
+      headerCloseBtn2.style.backgroundColor = '#fff';
+      a4.style.color = '#fff';
+      a3.style.color = '#fff';
+      a2.style.color = '#fff';
+      a1.style.color = '#fff';
+    }else{
+      header.style.backgroundColor = '#fff';
+      headerHn.style.color = '#000';
+      headerBtn3.style.backgroundColor = '#000';
+      headerBtn2.style.backgroundColor = '#000';
+      headerBtn1.style.backgroundColor = '#000';
+      headerCloseBtn1.style.backgroundColor = '#000';
+      headerCloseBtn2.style.backgroundColor = '#000';
+      bg.style.backgroundColor = '#fff';
+      a1.style.color = '#000';
+      a4.style.color = '#000';
+      a3.style.color = '#000';
+      a2.style.color = '#000';
+    }
+  })
+
 }
