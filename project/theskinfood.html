@@ -1,13 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>knola</title>
+    <title>JungMin Portfolio</title>
+    <link rel="stylesheet" href="../css/project_reset.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/project.css">
 </head>
 <body>
-    <div>
-        <h1><span></span></h1>
-    </div>
+    <header id="header" style="background-color: #FCEFCD;">
+        <div>
+            <h1><a href="../index.html">JUNGMIN</a></h1>
+            <div id="navBtn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="navCloseBtn">
+                <div></div>
+                <div></div>
+            </div>
+            <nav>
+                <h4 class="hide">메인내비게이션</h4>
+                <ul>
+                    <li><a class="fromLeft underline" href="../index.html/#box02">ABOUT</a></li>
+                    <li><a class="fromLeft underline" href="../index.html/#box03">PROJECT</a></li>
+                    <li><a class="fromLeft underline" href="../index.html/#box04">STACK</a></li>
+                    <li><a class="fromLeft underline" href="../index.html/#box05">CONTACT</a></li>
+                </ul>
+                <!-- <p class="close"><i class="fa-solid fa-xmark"></i></p> -->
+            </nav>
+            <!-- <p class="navBtn"><i class="fa-solid fa-bars"></i></p> -->
+        </div>
+    </header>
+    <!-- 내용 시작 -->
+    <section>
+        <figure style="background-color: #FCEFCD;">
+            <h1><img src="../images/skinfood.png" alt="스킨푸드 로고"></h1>
+            <figcaption>
+                스킨푸드 쇼핑몰 사이트 개인 작업
+            </figcaption>
+        </figure>
+        <ol>
+            <li>
+                <figure>
+                    <h4>01. 프로젝트 소개(어떤 목적, 구현 배경)</h4>
+                    <figcaption>
+                        js를 연습하기 위해 만들 사이트를 찾아야 했고, 제품을 넘겨볼 수 있는 것과 이미지 갤러리 기능을 사용할 수 있어 스킨푸드 사이트를 참고해 만들었다.
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <h4>02. 개발 과정(프로젝트를 진행하면서 발생한 문제, 문제해결 포인트 구체적으로)</h4>
+                    <figcaption>
+                        swiper를 만드는 것에 어려움이 있었는데 전체가 있는 div와 보여주는 div의 크기의 계산에서 어려움을 겪었다. px을 퍼센트로 바꿔 해결할 수 있었다.
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <h4>03. 개발 도구</h4>
+                    <figcaption>
+                        html, css, js, jquery
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <h4>04. 어떤 기술을 사용했는지(프레임워크/ 라이브러리등 기술 스택 상세히)</h4>
+                    <figcaption>
+                        <dl>
+                           <dt>1. banner</dt> 
+                           <dd>a. animate함수를 사용하여 banner에 swiper효과를 주었다.</dd>
+                           
+                           <dt>2. 요즘 뜨는 상품, 카테고리별 인기템</dt> 
+                           <dd>a. ul태그 안에 li로 제품들을 넣어 지정해둔 ul의 가로 넓이를 넘어가는 li를 overflow:hidden;을 사용해 숨겨주었다.</dd>
+                           <dd>b. prev와 next버튼을 누르면 prepend(), append()를 사용하여 리스트의 각 끝과 처음으로 삽입시켜주어 gallery처럼 볼 수 있도록 만들었다.</dd>
+
+                           <dt>3. 포토리뷰</dt>
+                           <dd>a. li태그 안의 section태그에 이미지와 설명을 적어주었다.</dd>
+                           <dd>b. li태그를 감싸고 있는 ul태그의 넓이를 li 태그와 같은 넓이로 한 후 overflow:hidden;하여 하나의 li를 제외한 나머지를 숨겨주었다.</dd>
+
+                           <dt>4. instargram</dt>
+                           <dd>a. 이미지를 나타내는 객체에 클릭 이벤트 핸들러를 연결시켜주었다.</dd>
+                           <dd>b. img클릭시 click 이벤트가 실행되게 하였고, #photo요소에 표시되는 사진을 클릭한 요소의 주소로 바꾸었다.</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <h4>05. 결과물 링크(스크린샷, 깃, 주소)</h4>
+                    <figcaption><a href="https://github.com/jungminmin00/theskinfood.git" target="_blank">githubLink</a></figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <h4>06. 인사이트(프로젝트를 진행하며얻은 개인적 경험 특히 내가 노력했던 부분과 발생한 문제 어떻게 극복했는지)</h4>
+                    <figcaption>
+                        첫 반응형 프로젝트이고 js를 처음 사용해본 프로젝트이기에 네비게이션바를 반응형으로 만드는 것에 어려움을 느꼈습니다.
+                    </figcaption>
+                </figure>
+            </li>
+            
+        </ol>
+    </section>
 </body>
 </html>

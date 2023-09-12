@@ -394,7 +394,7 @@ function resize(){
 
 function headerBg(){
   let header = document.querySelector('header');
-  let headerHn = document.querySelector('header>div>h1');
+  let headerHn = document.querySelector('header>div>h1>a');
   let headerBtn3 = document.querySelector('header #navBtn>div:nth-child(3)');
   let headerBtn2 = document.querySelector('header #navBtn>div:nth-child(2)');
   let headerBtn1 = document.querySelector('header #navBtn>div:nth-child(1)');

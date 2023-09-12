@@ -1,13 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>knola</title>
+    <title>JungMin Portfolio</title>
+    <link rel="stylesheet" href="../css/project_reset.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/project.css">
 </head>
 <body>
-    <div>
-        <h1><span></span></h1>
-    </div>
+    <header id="header" style="background-color: #E6F4F4;">
+        <div>
+            <h1><a href="../index.html">JUNGMIN</a></h1>
+            <div id="navBtn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="navCloseBtn">
+                <div></div>
+                <div></div>
+            </div>
+            <nav>
+                <h2 class="hide">메인내비게이션</h2>
+                <ul>
+                    <li><a class="fromLeft underline" href="../index.html/#box02">ABOUT</a></li>
+                    <li><a class="fromLeft underline" href="../index.html/#box03">PROJECT</a></li>
+                    <li><a class="fromLeft underline" href="../index.html/#box04">STACK</a></li>
+                    <li><a class="fromLeft underline" href="../index.html/#box05">CONTACT</a></li>
+                </ul>
+                <!-- <p class="close"><i class="fa-solid fa-xmark"></i></p> -->
+            </nav>
+            <!-- <p class="navBtn"><i class="fa-solid fa-bars"></i></p> -->
+        </div>
+    </header>
+    <!-- 내용 시작 -->
+    <section>
+        <figure style="background-color: #E6F4F4;">
+            <h3><img src="../images/banksalad.png" alt="뱅크샐러드 로고"></h3>
+            <figcaption>
+                뱅크샐러드 기업 사이트 개인 작업
+            </figcaption>
+        </figure>
+        <ol>
+            <li>
+                <figure>
+                    <h4>01. 프로젝트 소개(어떤 목적, 구현 배경)</h4>
+                    <figcaption>
+                        모바일 어플로만 뱅크샐러드를 사용해보다가 웹버전이 궁금해져 들어가보게 되었고 네비게이션 디자인이 마음에 들어 만들게 되었습니다.
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <h4>02. 개발 과정(프로젝트를 진행하면서 발생한 문제, 문제해결 포인트 구체적으로)</h4>
+                    <figcaption>
+                        sass를 연습하기 위한 프로젝트로 어려움 없이 만들 수 있었습니다.
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <h4>03. 개발 도구</h4>
+                    <figcaption>
+                        sass, html , jquery
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <h4>04. 어떤 기술을 사용했는지(프레임워크/ 라이브러리등 기술 스택 상세히)</h4>
+                    <figcaption>
+                        <dl>
+                           <dt>1. header</dt> 
+                           <dd>a. nav에 마우스를 올리면 mouseenter이벤트를 연결시켜 css의 display를 inline-block로 로 설정해주었고, #headerWrap의 높이를 380px로 지정하였다. #headerWrap부분 밖으로 마우스가 나가면 mouseleave이벤트를 연결시킨 후 display를 none으로, #headerWrap높이를 auto로 바꿔주었다.</dd>
+
+                           <dt>2. timer함수</dt> 
+                           <dd>a. 선언해둔 변수 str에 setInterval()을 사용해 애니메이션을 지연시킨 후 clearInterval()을 통해 반복을 중단한 후  timer함수를 다시 실행시켜 str에 setInterval()을 재할당 해주었다.</dd>
+
+                           <dt>3. 뱅크샐러드 pick!</dt>
+                           <dd>a. 변수 liWidth에 width()를 이용해 리스트 중 하나의 요소의 가로길이를 넣어준다. 리스트 전체를 margin-left를 이용해 liWidth만큼 옮겨준 후, 자연스러운 애니메이션을 위해 리스트의 마지막 요소에 pretendTo를 사용해 리스트 가장 처음으로 이동시켜주어 .prev버튼을 클릭할 시 click 이벤트를 발생시고  animate()를 사용해 marginLeft로 liWidth만큼 이동시켜준다. 그 후 리스트의 첫번째 li를 리스트 맨 뒤에 넣어주고, 다음 누를 버튼을 위해 css로 리스트를 liWidth만큼 이동해주었다.</dd>
+                           <dd>.next버튼을 클릭할 시 click 이벤트를 발생시고  animate()를 사용해 marginLeft로 liWidth만큼 이동시켜준다. 그 후 리스트의 마지막 li를 리스트 맨 처음에 넣어주고, 다음 누를 버튼을 위해 css로 리스트를 liWidth만큼 이동해주었다.</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <h4>05. 결과물 링크(스크린샷, 깃, 주소)</h4>
+                    <figcaption><a href="https://github.com/jungminmin00/banksalad_p.git" target="_blank">githubLink</a></figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <h4>06. 인사이트(프로젝트를 진행하며얻은 개인적 경험 특히 내가 노력했던 부분과 발생한 문제 어떻게 극복했는지)</h4>
+                    <figcaption>
+                        mixin을 함수처럼 사용하는 것을 sass의 최대 장점이라고 생각한다. 그래서 많이 mixin을 만들려고 노력했다.
+                    </figcaption>
+                </figure>
+            </li>
+            
+        </ol>
+    </section>
 </body>
 </html>

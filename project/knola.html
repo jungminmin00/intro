@@ -4,9 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JungMin Portfolio</title>
-    
+    <link rel="stylesheet" href="../css/project_reset.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/project.css">
 </head>
 <body>
-    
+    <header id="header" style="background-color: #DEEEF9;">
+        <div>
+            <h1><a href="../index.html">JUNGMIN</a></h1>
+            <div id="navBtn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="navCloseBtn">
+                <div></div>
+                <div></div>
+            </div>
+            <nav>
+                <h2 class="hide">메인내비게이션</h2>
+                <ul>
+                    <li><a class="fromLeft underline" href="../index.html/#box02">ABOUT</a></li>
+                    <li><a class="fromLeft underline" href="../index.html/#box03">PROJECT</a></li>
+                    <li><a class="fromLeft underline" href="../index.html/#box04">STACK</a></li>
+                    <li><a class="fromLeft underline" href="../index.html/#box05">CONTACT</a></li>
+                </ul>
+                <!-- <p class="close"><i class="fa-solid fa-xmark"></i></p> -->
+            </nav>
+            <!-- <p class="navBtn"><i class="fa-solid fa-bars"></i></p> -->
+        </div>
+    </header>
+    <!-- 내용 시작 -->
+    <section>
+        <figure style="background-color: #DEEEF9;">
+            <h3><img src="../images/knola.png" alt="크놀라 로고"></h3>
+            <figcaption>
+                Knola 쇼핑몰 사이트 개인 작업
+            </figcaption>
+        </figure>
+        <ol>
+            <li>
+                <figure>
+                    <h4>01. 프로젝트 소개(어떤 목적, 구현 배경)</h4>
+                    <figcaption>
+                        react를 연습하기 위해 만들 사이트를 찾다 평소 좋아하는 그래놀라 브랜드인 크놀라 사이트에 들어가게 되었고 디자인이 마음에 들어 만들게되었습니다.
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <h4>02. 개발 과정(프로젝트를 진행하면서 발생한 문제, 문제해결 포인트 구체적으로)</h4>
+                    <figcaption>
+                        메인 페이지에서 임의로 만들어둔 json파일을 활용하여 Best4와 New4를 나타내야 했었는데 배열.length로 하면 itemList페이지에서도 배열이 4개로 나왔습니다. useState도 사용해보고 바뀌지 않는 변수를 선언해두는 등 여러 방법을 사용했지만 sass로 간단하게 overflow:hidden을 통해 해결할 수 있었습니다.
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <h4>03. 개발 도구</h4>
+                    <figcaption>
+                        HTML5, SASS, JavaScript, jQuery, React.js
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <h4>04. 어떤 기술을 사용했는지(프레임워크/ 라이브러리등 기술 스택 상세히)</h4>
+                    <figcaption>
+                        <dl>
+                           <dt>1. main</dt> 
+                           <dd>a. React-Router를 사용하여 메뉴 클릭 시 해당 spa로 이동하게 구현하였습니다.</dd>
+                           <dd>b. data를 JSON으로 받아와 sort함수를 이용하여 각각을 내림차순으로 만든 후 sass로 스타일을 조정해 상위 4개만 보일 수 있도록 구현하였습니다.</dd>
+                           <dt>2. 제품 상세, wishList</dt> 
+                           <dd>a. useState에 있는 제품 데이터를 반복문을 사용하여 구현하였습니다. 검색, 정렬 기능을 구현하기 위해 filter함수와 sort함수를 사용하였습니다. 제품을 클릭하면 filter함수와 Link를 사용해 해당데이터의 slug를 가져오는 기능을 구현했습니다.</dd>
+                           <dd>b. useParams()를 사용해 해당 제품의 세부 사항, 리뷰가 출력 되도록 구현하였습니다.</dd>
+                           <dd>c. ‘장바구니 추가’ 버튼 클릭 시 navigate함수를 사용해 wishList페이지로 이동하게 구현했고, localStorage를 사용해 wishList로 보낼 데이터를 저장 후 새로운 배열을 만들어 출력했습니다.</dd>
+                           <dd>d. ‘지우기’ 버튼 클릭시 제품 slug를 사용해 데이터를 찾은 후 delete연산자로 해당 데이터를 지웠습니다.</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <h4>05. 결과물 링크(스크린샷, 깃, 주소)</h4>
+                    <figcaption><a href="https://github.com/jungminmin00/knola" target="_blank">githubLink</a></figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <h4>06. 인사이트(프로젝트를 진행하며얻은 개인적 경험 특히 내가 노력했던 부분과 발생한 문제 어떻게 극복했는지)</h4>
+                    <figcaption>
+                        React를 이해하기 위해 노력했고, 프로젝트를 스타일만을 사용한 반응형과 Grid형식의 반응형을 만들기 위해 많은 시간을 투자했습니다. 
+                    </figcaption>
+                </figure>
+            </li>
+            
+        </ol>
+    </section>
 </body>
 </html>

@@ -129,7 +129,7 @@ header>div{
     align-items: center;
     flex-shrink: 0;
 }
-header>div>h1{
+header>div>h1>a{
     color: #FFF;
     font-family: Montserrat;
     font-size: 22px;

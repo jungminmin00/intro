@@ -1,0 +1,71 @@
+header #navBtn{
+    display: none;
+}
+header #navCloseBtn{
+    display: none;
+}
+header>div>h1>a{
+    color: #000;
+}
+header>div>nav>ul a{
+    color: #000;
+}
+nav{
+    display: none;
+}
+/* section */
+section{
+}
+section>figure{
+    padding: 280px 0 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 153px;
+}
+section>figure>h1{
+/* width: 379.31px; */
+/* height: 100px; */
+    margin-bottom: 48px;
+}
+section>figure>figcaption{
+    color: #000;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 30px */
+}
+section>ol{
+    
+    padding: 0 250px;
+}
+section>ol>li{
+    margin-bottom: 95px;
+}
+section>ol>li>figure{}
+section>ol>li>figure>h3{
+    margin-bottom: 20px;
+}
+section>ol>li>figure>figcaption{
+    width: 1200px;
+}
+h4{
+    color: #000;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 30px */
+}
+figcaption{
+    color: #000;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+figcaption>a{
+    color: #000;
+}
