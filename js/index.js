@@ -140,6 +140,13 @@ function nav(){     // top포함
       $('html,body').animate({scrollTop: idHeight}, 500);
       return false;   // a 막아주기
   })
+  $('header>div>h1>a').on('click', function(){
+    let href = $(this).attr('href');
+      console.log(href);
+      let idHeight = $(href).offset().top;
+      $('html,body').animate({scrollTop: idHeight}, 500);
+      return false;   // a 막아주기
+  })
 }
 function navm(){
   $('#header>div>nav>ul>li>a').on('click', function(){
@@ -326,16 +333,16 @@ function cursorAnimate(){
 
 function link(){
   $('#box03>div .knola').on('click', function(){
-    window.open('./project/knola.html');
+    window.open('http://knola.explain.s3-website.ap-northeast-2.amazonaws.com');
   })
   $('#box03>div .hanssem').on('click', function(){
-    window.open('./project/hanssem.html');
+    window.open('http://hanssem.explain.s3-website.ap-northeast-2.amazonaws.com');
   })
   $('#box03>div .banksalad').on('click', function(){
-    window.open('./project/banksalad.html');
+    window.open('../project/banksalad.html');
   })
   $('#box03>div .theskinfood').on('click', function(){
-    window.open('./project/theskinfood.html');
+    window.open('../project/theskinfood.html');
   })
 }
 
