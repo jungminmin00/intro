@@ -339,10 +339,10 @@ function link(){
     window.open('http://hanssem.explain.s3-website.ap-northeast-2.amazonaws.com');
   })
   $('#box03>div .banksalad').on('click', function(){
-    window.open('../project/banksalad.html');
+    window.open('http://banksalad.explain.s3-website.ap-northeast-2.amazonaws.com');
   })
   $('#box03>div .theskinfood').on('click', function(){
-    window.open('../project/theskinfood.html');
+    window.open('http://skinfood.explain.s3-website.ap-northeast-2.amazonaws.com');
   })
 }
 
