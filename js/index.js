@@ -18,7 +18,7 @@ $(function(){
   
   nav();
   textAnimation();
-  link();
+  // link();
   resize();
   // allData();
   if(windowW >= 1441){
