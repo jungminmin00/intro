@@ -241,12 +241,48 @@ header #navCloseBtn>div:nth-child(2){
     font-family: Pretendard;
 }
 #box01>a{
+    
+    display: flex;
     color: #fff;
     font-size: 16px;
     margin-bottom: 0;
 }
 #box01>a>span{
     padding: 0 12px;
+}
+
+.arrow-prev,
+.arrow-next {
+    position: relative;
+    /* float:left; */
+    border:1px solid #000;
+    /* width:100px; */
+    /* height:100px; */
+    margin-right:5px;
+}
+
+.arrow-prev::after {
+    position: absolute;
+    /* left: 35px;  */
+    /* top: 20px; */
+    content: '';
+    width: 10.607px; /* 사이즈 */
+    height: 10.607px; /* 사이즈 */
+    border-top: 2px solid #fff; /* 선 두께 */
+    border-right: 2px solid #fff; /* 선 두께 */
+    transform: rotate(135deg); /* 각도 */
+}
+
+.arrow-next::after {
+    position: absolute;
+    /* left: 10px;  */
+    /* top: 20px;  */
+    content: '';
+    /* width: 10.607px; 사이즈 */
+    /* height: 10.607px; 사이즈 */
+    border-top: 5px solid #000; /* 선 두께 */
+    border-right: 5px solid #000; /* 선 두께 */
+    transform: rotate(135deg); /* 각도 */
 }
 
 /* box02 */
