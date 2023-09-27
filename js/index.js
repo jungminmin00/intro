@@ -2,7 +2,7 @@
 // import data from "../pData";
 $(function(){
   let windowW = $(window).width();
-  console.log(windowW);
+  // console.log(windowW);
   // scrollAll();
 
   var delay = 300;
@@ -12,9 +12,21 @@ $(function(){
   window.addEventListener('resize', function(){
     clearTimeout(timer);
     timer = setTimeout(function(){
-      console.log('resize event!');
     }, delay);
   });
+
+  // 
+  var burger = $('.menu-trigger');
+
+burger.each(function(index){
+  var $this = $(this);
+  
+  $this.on('click', function(e){
+    e.preventDefault();
+    $(this).toggleClass('active-7');
+  })
+});
+  // 
   
   nav();
   textAnimation();
@@ -128,21 +140,18 @@ function scrollAll(){
 function nav(){     // top포함
   $('#header nav>ul>li>a').on('click', function(){
       let href = $(this).attr('href');
-      console.log(href);
       let idHeight = $(href).offset().top;
       $('html,body').animate({scrollTop: idHeight}, 500);
       return false;   // a 막아주기
   })
   $('#box01>a').on('click', function(){
     let href = $(this).attr('href');
-      console.log(href);
       let idHeight = $(href).offset().top;
       $('html,body').animate({scrollTop: idHeight}, 500);
       return false;   // a 막아주기
   })
   $('header>div>h1>a').on('click', function(){
     let href = $(this).attr('href');
-      console.log(href);
       let idHeight = $(href).offset().top;
       $('html,body').animate({scrollTop: idHeight}, 500);
       return false;   // a 막아주기
@@ -159,7 +168,6 @@ function subMenu(){
     let href = $(this).attr('href');
     let idHeight = $(href).offset().top;
     $('html,body').animate({scrollTop: idHeight}, 500);
-    console.log(href, idHeight);
     return false;
   });
   $('#top').on('click', function(){
@@ -355,37 +363,31 @@ function menuBtn(){
   let list3 = document.querySelector('header>div>nav>ul>li:nth-child(3)>a');
   let list4 = document.querySelector('header>div>nav>ul>li:nth-child(4)>a');
   nBtn.onclick = function(){
-    // console.log('click');
     nav.style.display = 'flex';
     nBtn.style.display = 'none';
     nCBtn.style.display = 'flex';
   }
   nCBtn.onclick = function(){
-    // console.log('click');
     nav.style.display = 'none';
     nBtn.style.display = 'flex';
     nCBtn.style.display = 'none';
   }
   list1.onclick = function(){
-    // console.log('click');
     nav.style.display = 'none';
     nBtn.style.display = 'flex';
     nCBtn.style.display = 'none';
   }
   list2.onclick = function(){
-    // console.log('click');
     nav.style.display = 'none';
     nBtn.style.display = 'flex';
     nCBtn.style.display = 'none';
   }
   list3.onclick = function(){
-    // console.log('click');
     nav.style.display = 'none';
     nBtn.style.display = 'flex';
     nCBtn.style.display = 'none';
   }
   list4.onclick = function(){
-    // console.log('click');
     nav.style.display = 'none';
     nBtn.style.display = 'flex';
     nCBtn.style.display = 'none';
@@ -395,7 +397,6 @@ function menuBtn(){
 function resize(){
   window.onresize = function(){
     let innerWidth = window.innerHTML;
-    console.log(innerWidth);
   }
 }
 
@@ -417,7 +418,6 @@ function headerBg(){
 
   $(window).scroll(function(){
     var navbar = $(this).scrollTop();
-    console.log(navbar);
     if(navbar < 921){
       header.style.backgroundColor = '#000';
       headerHn.style.color = '#fff';
