@@ -45,6 +45,7 @@ burger.each(function(index){
     // hearMeBtn();
     menuBtn();
     headerBg();
+    introduction(); 
   }
   
 })
@@ -447,4 +448,10 @@ function headerBg(){
     }
   })
 
+}
+
+function introduction(){
+  let txt = document.querySelector('#box02 > div > div > p:last-child');
+
+  txt.innerHTML = "안녕하세요.<br/>성장하기 위해 노력하는 프론트엔드 개발자 황정민입니다.<br/>20살부터 시작해 23살 현재까지<br/>개발자가 되기 위해 공부중입니다.";
 }
