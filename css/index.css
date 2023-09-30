@@ -266,7 +266,7 @@ header #navCloseBtn>div:nth-child(2){
     transform: rotate(135deg); /* 각도 */
     position: absolute;
     top: 0px; /* 기본 0px 값으로 해주세요 */
-    left: -3.5px; /* 기본 0px 값으로 해주세요 */
+    left: -3.6px; /* 기본 0px 값으로 해주세요 */
     /* padding: 15px 0; */
     margin: 2px 0;
 }
@@ -359,7 +359,7 @@ header #navCloseBtn>div:nth-child(2){
     /* box-sizing: border-box; */
     border-radius: 8px;
     background-color: #fff;
-    padding: 104px 120px 74px;
+    /* padding: 104px 0; */
     display: flex;
     align-items: center;
 }
@@ -367,28 +367,43 @@ header #navCloseBtn>div:nth-child(2){
     margin-top: 24px;
 }
 #box04>div>div>h4{
+  width: 25%;
+  text-align: center;
+  line-height: 320px;
     color: #000;
     font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    line-height: 150%; /* 30px */
-    margin-right: 121px;
+    /* line-height: 150%; 30px */
+    /* margin-right: 121px; */
 }
-#box04>div>div>ul{
+#box04>div>div>div{
+
+  width: 75%;
+  padding-right: 120px;
+}
+#box04>div>div ul{
+    position: relative;
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: start;
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
 }
-#box04>div>div>ul>li{
-    margin: 15px 30px;
+#box04>div>div ul>li{
+    margin: 15px 34px;
     width: 112px;
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#box04>div>div>ul>li:last-child{
+#box04>div>div ul>li:last-child{
     margin-right: 0;
     /* width: 112px; */
 }
-#box04>div>div>ul>li>img{
+#box04>div>div ul>li>img{
 }
 
 footer{
