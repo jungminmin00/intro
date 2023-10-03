@@ -310,6 +310,8 @@ header #navCloseBtn>div:nth-child(2){
     margin-bottom: 160px;
 }
 #box03>div>div>figure{
+    width: 100%;
+    /* height: 760px; */
     margin-bottom: 40px;
     /* cursor:none; */
     display: flex;
@@ -335,7 +337,8 @@ header #navCloseBtn>div:nth-child(2){
     margin-bottom: 0;
 }
 #box03>div>div>figure>img{
-    width: fit-content;
+    /* width: fit-content; */
+    height: 100px;
     margin-bottom: 48px;
 }
 #box03>div>div>figure>figcaption{
