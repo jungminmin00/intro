@@ -80,14 +80,15 @@
   header>div>nav>ul{
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: start;
+      padding-top: 100px;
       align-items: center;
       text-align: center;
       margin: 0 auto;
   }
   header>div>nav>ul>li{
     padding: 0;
-    margin-bottom: 48px;
+    margin: 24px 0;
   }
   header>div>nav>ul>li:last-child{
     margin-bottom: 0;
@@ -108,7 +109,7 @@
   /* box01 */
   #box01{
       padding: 264px 0 0 0;
-      height: 100vh;
+      height: 90vh;
       box-sizing: border-box ;
       /* background-color: #000; */
       /* color: #ffff; */
