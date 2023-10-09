@@ -398,21 +398,25 @@ function menuBtn(){
     nav.style.display = 'none';
     nBtn.style.display = 'flex';
     nCBtn.style.display = 'none';
+    $('html, body').removeClass('hidden');
   }
   list2.onclick = function(){
     nav.style.display = 'none';
     nBtn.style.display = 'flex';
     nCBtn.style.display = 'none';
+    $('html, body').removeClass('hidden');
   }
   list3.onclick = function(){
     nav.style.display = 'none';
     nBtn.style.display = 'flex';
     nCBtn.style.display = 'none';
+    $('html, body').removeClass('hidden');
   }
   list4.onclick = function(){
     nav.style.display = 'none';
     nBtn.style.display = 'flex';
     nCBtn.style.display = 'none';
+    $('html, body').removeClass('hidden');
   }
 }
 
